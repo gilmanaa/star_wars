@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <script src="./js/quiz.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <header>Welcome to the Star Wars Quiz!!!</header>
+    <div class="bg"></div>
+    <main class="container">
+        <div class="begin" id="begin_button">
+            Want to learn which character you are? <br>
+            <input class="button_forward" id="btn_start" type="button" onclick="begin();" value="Let's Begin!">
+        </div>
+        <div class="hide" id="question1">
+            <div class="question" id="question1_text"></div>
+            <div class="picture" id="picture1"></div>
+            <div class="answer">
+                <label for="q1_answer1" class="answer_a ans_short" id="q1_label1"></label>
+                <input type="radio" id="q1_answer1" value=1 onclick="radio1();" name="on">
+                <label for="q1_answer2" class="answer_b ans_short" id="q1_label2"></label>
+                <input type="radio" id="q1_answer2" value=2 onclick="radio2();" name="on">
+                <label for="q1_answer3" class="answer_c ans_short" id="q1_label3"></label>
+                <input type="radio" id="q1_answer3" value=3 onclick="radio3();" name="on">
+                <label for="q1_answer4" class="answer_d ans_short" id="q1_label4"></label>
+                <input type="radio" id="q1_answer4" value=4 onclick="radio4();" name="on">
+            </div>
+            <input class="button_forward" type="button" onclick="submit_answer(1);" value="Submit" id="submit_1">
+            <input class="hide" type="button" onclick="submit_answer(2);" value="Submit" id="submit_2">
+            <input class="hide" type="button" onclick="submit_answer(3);" value="Submit" id="submit_3">
+            <input class="hide" type="button" onclick="submit_answer(4);" value="Submit" id="submit_4">
+            <input class="hide" type="button" onclick="submit_answer(5);" value="Submit" id="submit_5">
+        </div>
+        <div class="hide" id="final_result"></div>
+    </main>
+    <footer>Copyright - Aaron Gilman Inc.</footer>
+</body>
+</html>

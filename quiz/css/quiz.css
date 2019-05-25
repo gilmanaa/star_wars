@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    position: relative;
+}
+header {
+    background-color: black;
+    color: white;
+    height: 5vh;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 4vh;
+}
+footer {
+    background-color: lightgray;
+    color: black;
+    height: 4vh;
+    width: 100%;
+    margin: 0%;
+    position: fixed;
+    bottom: 0%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 3vh;
+}
+.bg {
+    position: absolute;
+    top: 5vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 91vh;
+    width: 100vw;
+    opacity: .7;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.begin {
+    position: relative;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 8vh;
+}
+#btn_start {
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 5vh;
+    border-radius: 10%;
+}
+.button_foward {  
+    padding: 1%;
+    background-color: aliceblue;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10%;
+}
+[type="button"] {
+    padding: 1%;
+    background-color: aliceblue;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10%;
+}
+.button_forward:hover {
+    background-color: rgb(118, 206, 107);
+    color: white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.hide {
+    display: none;
+}
+.question_box {
+    position: relative;
+    text-align: center;
+}
+.question {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vh;
+    color: white;
+    margin: 1%;
+}
+.picture {
+    margin: 0%;
+}
+.answer {
+    margin: 1%;
+}
+.ans_short {
+    color: white;
+    font-size: 3vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.results {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vh;
+}
+img {
+    border-radius: 3%;
+    border: 1px solid white;
+}
+.results img {
+    margin: 2%;
+}
+@media screen and (max-width: 500px) {
+    .picture {
+        height: 100%;
+        width: 100%;
+    }
+    header {
+        font-size: 5vw;
+    }
+    footer {
+        font-size: 4vw;
+    }
+    .question {
+        font-size: 10vw;
+        margin: 2%;
+    }
+    .answer {
+        margin: 2%;
+    }
+    .begin {
+        font-size: 8vw;
+        margin: 2%;
+    }
+}
